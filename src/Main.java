@@ -16,10 +16,10 @@ public class Main {
         };
         // Первый путь решения
         List<Person> peoplesList = new ArrayList<>(List.of(someGuys));
-        peoplesList.sort(new ComparePeople());
+        peoplesList.sort(new PeopleComparator());
 
         // Второй путь решения
-        TreeSet<Person> ts = new TreeSet<>(new ComparePeople());
+        TreeSet<Person> ts = new TreeSet<>(new PeopleComparator());
         ts.addAll(List.of(someGuys));
 
         System.out.print("\nСписок на входе:\n");
