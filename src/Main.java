@@ -19,8 +19,8 @@ public class Main {
         peoplesList.sort(new PeopleComparator());
 
         // Второй путь решения
-        TreeSet<Person> ts = new TreeSet<>(new PeopleComparator());
-        ts.addAll(List.of(someGuys));
+//        TreeSet<Person> ts = new TreeSet<>(new PeopleComparator());
+//        ts.addAll(List.of(someGuys));
 
         System.out.print("\nСписок на входе:\n");
         for (Person person: someGuys) {
@@ -30,9 +30,11 @@ public class Main {
         for (Person person: peoplesList) {
             System.out.printf("Фамилия: %-25s, Возраст: %3d\n", person.getSurname(), person.getAge());
         }
+/*
         System.out.print("\nСписок TreeSet:\n");
         for (Person person: ts) {
             System.out.printf("Фамилия: %-25s, Возраст: %3d\n", person.getSurname(), person.getAge());
         }
+*/
     }
 }
